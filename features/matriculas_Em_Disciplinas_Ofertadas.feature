@@ -22,3 +22,13 @@ Scenario: aluno não possui algum pre-requisito para pagar alguma cadeira
  Then aparece uma mensagem de erro : Voce não possui os pre-requistos de "Lógica"
  And eu não sou matriculado em "Lógica"
  And aparece só "Algoritmos" na coleção de disciplinas matriculadas 
+
+Scenario: aluno execedeu o limite de cadeiras na matrícula
+ Given eu loguei com "João" e senha "123"
+ And eu vejo as disciplinas disponíveis para matrícula
+ And eu possuo os pre-requisitos de todas as cadeiras que eu pretendo pagar
+ And o limite de caideras é de "2"
+ When eu escolho  "Lógica", "Algoritmos" e "Estatística"
+ And seleciono a opção de matricula
+ Then aparece uma mensagem de erro : "Número maximo de matriculas excedido"
+ And não aparece nenhuma cadeira na coleção de matrículas
