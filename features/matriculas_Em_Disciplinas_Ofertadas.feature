@@ -22,3 +22,4 @@ Scenario: aluno não possui algum pre-requisito para pagar alguma cadeira
  Then aparece uma mensagem de erro : Voce não possui os pre-requistos de "Lógica"
  And eu não sou matriculado em "Lógica"
  And aparece só "Algoritmos" na coleção de disciplinas matriculadas 
+ And aparece que "Lógica" foi recusada
