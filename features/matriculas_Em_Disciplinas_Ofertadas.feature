@@ -34,4 +34,8 @@ Scenario: aluno execedeu o limite de cadeiras na matrícula
  Then aparece uma mensagem de erro : "Número maximo de matriculas excedido"
  And não aparece nenhuma cadeira na coleção de matrículas
 
+<<<<<<< HEAD
 Scenario: Z
+=======
+Scenario: X
+>>>>>>>  cenario X do roteiro
