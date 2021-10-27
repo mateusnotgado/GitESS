@@ -35,7 +35,13 @@ Scenario: aluno execedeu o limite de cadeiras na matrícula
  And não aparece nenhuma cadeira na coleção de matrículas
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Scenario: Z
 =======
 Scenario: X
 >>>>>>>  cenario X do roteiro
+=======
+Scenario: X
+
+Scenario: Y
+>>>>>>> cenario Y do roteiro
